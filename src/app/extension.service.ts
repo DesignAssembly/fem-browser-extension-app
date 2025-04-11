@@ -10,6 +10,8 @@ export class ExtensionService {
   constructor(private http: HttpClient) { }
 
   getExtensions(): Observable<Extension[]> {
-    return this.http.get<Extension[]>('/assets/data.json');
+    const isGithubPages = window.location.hostname === 'designassembly.github.io';
+    const path = isGithubPages ? '/fem-browser-extension-app/assets/data.json' : '/data.json';
+    return this.http.get<Extension[]>(path);
   }
 }
