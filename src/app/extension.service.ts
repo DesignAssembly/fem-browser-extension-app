@@ -10,6 +10,6 @@ export class ExtensionService {
   constructor(private http: HttpClient) { }
 
   getExtensions(): Observable<Extension[]> {
-    return this.http.get<Extension[]>('/data.json');
+    return this.http.get<Extension[]>('/assets/data.json');
   }
 }
