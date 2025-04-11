@@ -1,0 +1,56 @@
+:host {
+    display: flex;
+    font-size: 1rem;
+    color: var(--text-color-button);
+    line-height: 140%;
+    padding: .5rem 1rem;
+    border: 1px solid var(--border-color-base);
+    border-radius: 5rem;
+    background-color: var(--background-color);
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--text-color-button-invert);
+        border-color: var(--primary-color);
+        cursor: pointer;
+    }
+    &:focus-visible {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+
+    &.active{
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--text-color-button-invert);
+    }
+}
+
+:host.icon-only {
+    display: flex;
+    padding: .875rem;
+    border-radius: .75rem;
+    background-color: var(--background-color-icon-only);
+    border: none;
+
+    &:hover {
+        background-color: var(--background-color-icon-only-hover);
+    }
+}
+
+:host.btn-medium {
+
+    font-size: 1.25rem;
+    &:hover {
+        background-color: var(--background-color-btn-filter);
+        color: var(--text-color-btn-filter);
+        border-color: var(--border-color-base);
+    }
+    &.active:hover {
+        background-color: var(--red-500);
+        color: var(--text-color-button-invert);
+        border-color: var(--red-500);
+    }
+}
+
+

@@ -1,0 +1,14 @@
+:host {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: 12px;
+}
+
+.logo svg path {
+    fill: var(--headline-color);
+}
+#flower {
+    fill: var(--primary-color);
+}

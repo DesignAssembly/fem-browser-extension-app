@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding: 1.15rem;
+    border-radius: 1.15rem;
+    border: 1px solid var(--border-color-base);
+    gap: 1.5rem;
+    height: 12.5rem;
+    justify-content: space-between
+}
+
+.card-content {
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.card-info {
+    gap: .5rem;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
