@@ -11,7 +11,7 @@ export class ExtensionService {
 
   getExtensions(): Observable<Extension[]> {
     const isGithubPages = window.location.hostname === 'designassembly.github.io';
-    const path = isGithubPages ? '/fem-browser-extension-app/assets/data.json' : '/data.json';
+    const path = isGithubPages ? '/fem-browser-extension-app/data.json' : '/data.json';
     return this.http.get<Extension[]>(path);
   }
 }
