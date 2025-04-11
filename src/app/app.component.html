@@ -10,7 +10,7 @@
   </div>
   
 
-  <div class="cards-container">
+  <main class="cards-container">
     @if (filteredExtensions().length > 0) {
       @for (ext of filteredExtensions(); track ext.name) {
         <app-extension-card
@@ -34,6 +34,6 @@
         }
       </div>
     }
-  </div>
+  </main>
 </div>
 
